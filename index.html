@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Mobile Apps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .app-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+        
+        .app-card h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        
+        .app-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        footer {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .contact {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Jake's Mobile Apps</h1>
+            <p class="subtitle">iOS & Android 앱 개발자</p>
+        </header>
+        
+        <div class="apps-grid">
+            <div class="app-card">
+                <div class="app-icon">💕</div>
+                <h2>LoveZoom</h2>
+                <p>매일 질문으로 더 가까워지는 우리, 커플을 위한 질문 다이어리 앱</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/app/lovezoom" class="btn btn-primary" target="_blank">App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=dev.jake.lovezoomapp" class="btn btn-primary" target="_blank">Google Play</a>
+                </div>
+            </div>
+            
+            <div class="app-card">
+                <div class="app-icon">🚀</div>
+                <h2>Gravity Ship</h2>
+                <p>중력을 이용한 우주 탐험 게임</p>
+                <div class="app-links">
+                    <a href="/Gravity-Ship/" class="btn btn-secondary">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div>
+                <a href="/privacy-policy.html">개인정보처리방침</a>
+                <a href="/terms-of-service.html">서비스 이용약관</a>
+                <a href="/account-deletion.html">계정 삭제</a>
+            </div>
+            <div class="contact">
+                📧 dev.geeyong@gmail.com
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
